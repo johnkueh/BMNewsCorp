@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1741890C191324D1001FCF31 /* BMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1741890B191324D1001FCF31 /* BMSDK.framework */; };
+		1741890E191324E0001FCF31 /* BMSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1741890D191324E0001FCF31 /* BMSDK.bundle */; };
 		17FE097E190FA0DA005CA8AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FE097D190FA0DA005CA8AB /* Foundation.framework */; };
 		17FE0980190FA0DA005CA8AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FE097F190FA0DA005CA8AB /* CoreGraphics.framework */; };
 		17FE0982190FA0DA005CA8AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FE0981190FA0DA005CA8AB /* UIKit.framework */; };
@@ -21,6 +23,8 @@
 		17FE099F190FA0DA005CA8AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FE0981190FA0DA005CA8AB /* UIKit.framework */; };
 		17FE09A7190FA0DA005CA8AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17FE09A5190FA0DA005CA8AB /* InfoPlist.strings */; };
 		17FE09A9190FA0DA005CA8AB /* NewsCorpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FE09A8190FA0DA005CA8AB /* NewsCorpTests.m */; };
+		17FE09B5190FA19E005CA8AB /* demo-cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 17FE09B4190FA19E005CA8AB /* demo-cover.png */; };
+		44F9839D9801418BB9641CA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F35CD332AA974E0B9EBB7828 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17FE097A190FA0DA005CA8AB /* NewsCorp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsCorp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1741890B191324D1001FCF31 /* BMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMSDK.framework; path = Library/BMSDK.framework; sourceTree = "<group>"; };
+		1741890D191324E0001FCF31 /* BMSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BMSDK.bundle; path = Library/BMSDK.bundle; sourceTree = SOURCE_ROOT; };
+		17FE097A190FA0DA005CA8AB /* News Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FE097D190FA0DA005CA8AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17FE097F190FA0DA005CA8AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		17FE0981190FA0DA005CA8AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,9 @@
 		17FE09A4190FA0DA005CA8AB /* NewsCorpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsCorpTests-Info.plist"; sourceTree = "<group>"; };
 		17FE09A6190FA0DA005CA8AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17FE09A8190FA0DA005CA8AB /* NewsCorpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCorpTests.m; sourceTree = "<group>"; };
+		17FE09B4190FA19E005CA8AB /* demo-cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-cover.png"; sourceTree = "<group>"; };
+		DC32169B67AA4B2C90E17F40 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F35CD332AA974E0B9EBB7828 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,8 @@
 				17FE0980190FA0DA005CA8AB /* CoreGraphics.framework in Frameworks */,
 				17FE0982190FA0DA005CA8AB /* UIKit.framework in Frameworks */,
 				17FE097E190FA0DA005CA8AB /* Foundation.framework in Frameworks */,
+				1741890C191324D1001FCF31 /* BMSDK.framework in Frameworks */,
+				44F9839D9801418BB9641CA8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +97,14 @@
 				17FE09A2190FA0DA005CA8AB /* NewsCorpTests */,
 				17FE097C190FA0DA005CA8AB /* Frameworks */,
 				17FE097B190FA0DA005CA8AB /* Products */,
+				DC32169B67AA4B2C90E17F40 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		17FE097B190FA0DA005CA8AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17FE097A190FA0DA005CA8AB /* NewsCorp.app */,
+				17FE097A190FA0DA005CA8AB /* News Demo.app */,
 				17FE099B190FA0DA005CA8AB /* NewsCorpTests.xctest */,
 			);
 			name = Products;
@@ -101,10 +113,12 @@
 		17FE097C190FA0DA005CA8AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1741890B191324D1001FCF31 /* BMSDK.framework */,
 				17FE097D190FA0DA005CA8AB /* Foundation.framework */,
 				17FE097F190FA0DA005CA8AB /* CoreGraphics.framework */,
 				17FE0981190FA0DA005CA8AB /* UIKit.framework */,
 				17FE099C190FA0DA005CA8AB /* XCTest.framework */,
+				F35CD332AA974E0B9EBB7828 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +126,7 @@
 		17FE0983190FA0DA005CA8AB /* NewsCorp */ = {
 			isa = PBXGroup;
 			children = (
+				17FE09B3190FA19E005CA8AB /* Resources */,
 				17FE098C190FA0DA005CA8AB /* BMAppDelegate.h */,
 				17FE098D190FA0DA005CA8AB /* BMAppDelegate.m */,
 				17FE098F190FA0DA005CA8AB /* Main.storyboard */,
@@ -126,6 +141,7 @@
 		17FE0984190FA0DA005CA8AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1741890D191324E0001FCF31 /* BMSDK.bundle */,
 				17FE0985190FA0DA005CA8AB /* NewsCorp-Info.plist */,
 				17FE0986190FA0DA005CA8AB /* InfoPlist.strings */,
 				17FE0989190FA0DA005CA8AB /* main.m */,
@@ -152,24 +168,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		17FE09B3190FA19E005CA8AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17FE09B4190FA19E005CA8AB /* demo-cover.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17FE0979190FA0DA005CA8AB /* NewsCorp */ = {
+		17FE0979190FA0DA005CA8AB /* News Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "NewsCorp" */;
+			buildConfigurationList = 17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "News Demo" */;
 			buildPhases = (
+				681619D6D1C840F598FA2E90 /* Check Pods Manifest.lock */,
 				17FE0976190FA0DA005CA8AB /* Sources */,
 				17FE0977190FA0DA005CA8AB /* Frameworks */,
 				17FE0978190FA0DA005CA8AB /* Resources */,
+				44548124503E4C179342B7C2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NewsCorp;
+			name = "News Demo";
 			productName = NewsCorp;
-			productReference = 17FE097A190FA0DA005CA8AB /* NewsCorp.app */;
+			productReference = 17FE097A190FA0DA005CA8AB /* News Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		17FE099A190FA0DA005CA8AB /* NewsCorpTests */ = {
@@ -200,6 +226,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = BeaconMaker;
 				TargetAttributes = {
+					17FE0979190FA0DA005CA8AB = {
+						DevelopmentTeam = YT2Y4K6JHF;
+					};
 					17FE099A190FA0DA005CA8AB = {
 						TestTargetID = 17FE0979190FA0DA005CA8AB;
 					};
@@ -218,7 +247,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17FE0979190FA0DA005CA8AB /* NewsCorp */,
+				17FE0979190FA0DA005CA8AB /* News Demo */,
 				17FE099A190FA0DA005CA8AB /* NewsCorpTests */,
 			);
 		};
@@ -230,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17FE0996190FA0DA005CA8AB /* Images.xcassets in Resources */,
+				1741890E191324E0001FCF31 /* BMSDK.bundle in Resources */,
 				17FE0988190FA0DA005CA8AB /* InfoPlist.strings in Resources */,
+				17FE09B5190FA19E005CA8AB /* demo-cover.png in Resources */,
 				17FE0991190FA0DA005CA8AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +275,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44548124503E4C179342B7C2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681619D6D1C840F598FA2E90 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17FE0976190FA0DA005CA8AB /* Sources */ = {
@@ -269,7 +333,7 @@
 /* Begin PBXTargetDependency section */
 		17FE09A1190FA0DA005CA8AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 17FE0979190FA0DA005CA8AB /* NewsCorp */;
+			target = 17FE0979190FA0DA005CA8AB /* News Demo */;
 			targetProxy = 17FE09A0190FA0DA005CA8AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -318,7 +382,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = com.apple.idms.appleid.prd.70677459376e4a41544642464d436a474974575875513d3d;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -356,7 +420,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = com.apple.idms.appleid.prd.70677459376e4a41544642464d436a474974575875513d3d;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -374,26 +438,44 @@
 		};
 		17FE09AD190FA0DA005CA8AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC32169B67AA4B2C90E17F40 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsCorp/NewsCorp-Prefix.pch";
 				INFOPLIST_FILE = "NewsCorp/NewsCorp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos7.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		17FE09AE190FA0DA005CA8AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC32169B67AA4B2C90E17F40 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: John Kueh (YT2Y4K6JHF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: John Kueh (YT2Y4K6JHF)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsCorp/NewsCorp-Prefix.pch";
 				INFOPLIST_FILE = "NewsCorp/NewsCorp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos7.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -450,13 +532,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "NewsCorp" */ = {
+		17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "News Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17FE09AD190FA0DA005CA8AB /* Debug */,
 				17FE09AE190FA0DA005CA8AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17FE09AF190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "NewsCorpTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +548,7 @@
 				17FE09B1190FA0DA005CA8AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

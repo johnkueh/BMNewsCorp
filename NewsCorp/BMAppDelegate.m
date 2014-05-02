@@ -7,12 +7,19 @@
 //
 
 #import "BMAppDelegate.h"
+#import <BMSDK/BMSDK.h>
+
+#define APPID @"f899db828ecc850894f67dd6b2ed1744"
+#define APPSECRET @"bdc9761f8169e4967005aa3b88379b66"
 
 @implementation BMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //Beaconmaker SDK
+    [BMSDK setApplicationId:APPID clientKey:APPSECRET];
+
     return YES;
 }
 							
@@ -26,6 +33,7 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[BMSDK sharedInstance] applicationDidEnterBackground:application];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -41,6 +49,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    [[BMSDK sharedInstance] application:application didReceiveLocalNotification:notification];
 }
 
 @end
