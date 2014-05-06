@@ -179,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17FE0979190FA0DA005CA8AB /* News Demo */ = {
+		17FE0979190FA0DA005CA8AB /* NewsDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "News Demo" */;
+			buildConfigurationList = 17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "NewsDemo" */;
 			buildPhases = (
 				681619D6D1C840F598FA2E90 /* Check Pods Manifest.lock */,
 				17FE0976190FA0DA005CA8AB /* Sources */,
@@ -193,7 +193,7 @@
 			);
 			dependencies = (
 			);
-			name = "News Demo";
+			name = NewsDemo;
 			productName = NewsCorp;
 			productReference = 17FE097A190FA0DA005CA8AB /* News Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -247,7 +247,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17FE0979190FA0DA005CA8AB /* News Demo */,
+				17FE0979190FA0DA005CA8AB /* NewsDemo */,
 				17FE099A190FA0DA005CA8AB /* NewsCorpTests */,
 			);
 		};
@@ -333,7 +333,7 @@
 /* Begin PBXTargetDependency section */
 		17FE09A1190FA0DA005CA8AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 17FE0979190FA0DA005CA8AB /* News Demo */;
+			target = 17FE0979190FA0DA005CA8AB /* NewsDemo */;
 			targetProxy = 17FE09A0190FA0DA005CA8AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "News Demo" */ = {
+		17FE09AC190FA0DA005CA8AB /* Build configuration list for PBXNativeTarget "NewsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17FE09AD190FA0DA005CA8AB /* Debug */,

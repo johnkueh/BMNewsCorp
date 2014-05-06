@@ -1,0 +1,19 @@
+# .gitignore
+
+# OS X noise
+.DS_Store
+
+# Old Skool stuff
+.svn
+
+# Xcode user-specific settings
+*.xcuserstate
+*.xcuserdatad/
+*.xccheckout
+
+project.pbxproj.bak
+
+# Build output folders (when running from command line)
+build/
+output/
+

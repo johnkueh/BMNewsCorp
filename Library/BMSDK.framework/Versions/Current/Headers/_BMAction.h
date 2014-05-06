@@ -6,20 +6,24 @@
 
 extern const struct BMActionAttributes {
 	__unsafe_unretained NSString *actionType;
+	__unsafe_unretained NSString *activationCount;
 	__unsafe_unretained NSString *activationProximity;
 	__unsafe_unretained NSString *content;
+	__unsafe_unretained NSString *maxActivation;
 	__unsafe_unretained NSString *notificationMessage;
 	__unsafe_unretained NSString *url;
 } BMActionAttributes;
 
 extern const struct BMActionRelationships {
-	__unsafe_unretained NSString *beacon;
+	__unsafe_unretained NSString *beacons;
 } BMActionRelationships;
 
 extern const struct BMActionFetchedProperties {
 } BMActionFetchedProperties;
 
 @class BMBeacon;
+
+
 
 
 
@@ -50,6 +54,20 @@ extern const struct BMActionFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSNumber* activationCount;
+
+
+
+@property int32_t activationCountValue;
+- (int32_t)activationCountValue;
+- (void)setActivationCountValue:(int32_t)value_;
+
+//- (BOOL)validateActivationCount:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSString* activationProximity;
 
 
@@ -65,6 +83,20 @@ extern const struct BMActionFetchedProperties {
 
 
 //- (BOOL)validateContent:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSNumber* maxActivation;
+
+
+
+@property int32_t maxActivationValue;
+- (int32_t)maxActivationValue;
+- (void)setMaxActivationValue:(int32_t)value_;
+
+//- (BOOL)validateMaxActivation:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -90,9 +122,9 @@ extern const struct BMActionFetchedProperties {
 
 
 
-@property (nonatomic, strong) BMBeacon *beacon;
+@property (nonatomic, strong) NSSet *beacons;
 
-//- (BOOL)validateBeacon:(id*)value_ error:(NSError**)error_;
+- (NSMutableSet*)beaconsSet;
 
 
 
@@ -101,6 +133,11 @@ extern const struct BMActionFetchedProperties {
 @end
 
 @interface _BMAction (CoreDataGeneratedAccessors)
+
+- (void)addBeacons:(NSSet*)value_;
+- (void)removeBeacons:(NSSet*)value_;
+- (void)addBeaconsObject:(BMBeacon*)value_;
+- (void)removeBeaconsObject:(BMBeacon*)value_;
 
 @end
 
@@ -113,6 +150,15 @@ extern const struct BMActionFetchedProperties {
 
 
 
+- (NSNumber*)primitiveActivationCount;
+- (void)setPrimitiveActivationCount:(NSNumber*)value;
+
+- (int32_t)primitiveActivationCountValue;
+- (void)setPrimitiveActivationCountValue:(int32_t)value_;
+
+
+
+
 - (NSString*)primitiveActivationProximity;
 - (void)setPrimitiveActivationProximity:(NSString*)value;
 
@@ -121,6 +167,15 @@ extern const struct BMActionFetchedProperties {
 
 - (NSString*)primitiveContent;
 - (void)setPrimitiveContent:(NSString*)value;
+
+
+
+
+- (NSNumber*)primitiveMaxActivation;
+- (void)setPrimitiveMaxActivation:(NSNumber*)value;
+
+- (int32_t)primitiveMaxActivationValue;
+- (void)setPrimitiveMaxActivationValue:(int32_t)value_;
 
 
 
@@ -138,8 +193,8 @@ extern const struct BMActionFetchedProperties {
 
 
 
-- (BMBeacon*)primitiveBeacon;
-- (void)setPrimitiveBeacon:(BMBeacon*)value;
+- (NSMutableSet*)primitiveBeacons;
+- (void)setPrimitiveBeacons:(NSMutableSet*)value;
 
 
 @end

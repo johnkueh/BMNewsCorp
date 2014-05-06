@@ -8,6 +8,8 @@
 - (CLProximity)proximity;
 - (BOOL) shouldFireForProximity:(CLProximity)proximity;
 
+- (void)resetActivationCount;
+
 @property(nonatomic, assign) BOOL persists;
 
 @end
